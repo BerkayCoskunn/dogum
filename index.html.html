@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğum Günü Sürprizi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Başlık Ortada -->
+    <h1>Doğum Günü Sürprizine Hoşgeldin!</h1>
+    
+    <!-- Şifre Giriş Alanı -->
+    <div id="login-container" style="text-align: center;">
+        <label for="password">Şifreyi Girin:</label>
+        <input type="password" id="password" placeholder="Şifre">
+        <button onclick="checkPassword()">Giriş Yap</button>
+    </div>
+
+    <!-- Video İzleme Butonu -->
+    <div id="surprise-container" style="display:none; text-align: center;">
+        <button onclick="showVideo()">Doğum Günü Videosunu İzle</button>
+    </div>
+
+    <!-- Video Alanı -->
+    <div id="video-container" style="display:none; text-align: center;">
+        <video id="birthday-video" controls>
+            <source src="file:///C:/Users/berkay/Desktop/dogum%20gunu/dogum_gunu_video.mp4.mp4" type="video/mp4">
+            Tarayıcınız video desteği sunmuyor.
+        </video>
+    </div>
+
+    <!-- Geri Bildirim Alanı -->
+    <div id="feedback-container" style="display:none; text-align: center;">
+        <textarea id="feedback" placeholder="Doğum günü dileklerinizi yazın..."></textarea>
+        <button onclick="submitFeedback()">Gönder</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
